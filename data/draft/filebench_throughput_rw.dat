@@ -1,0 +1,38 @@
+#operations\\\_per\\\_sec; nopWriter; nopWriter-dev; fileWriter; fileWriter-dev; elkWriter; elkWriter-DEV;
+
+
+#vanilla; avg; std;
+vanilla; 161768.075; 451.67;
+
+
+#strace; avg; std;
+raw; 44223.41; 44.768;
+detailedP_{args}; 40931.125; 107.455;
+detailedP_{all}; 35109.99; 161.09;
+detailedP_{all}C_{plain}; 29581.517; 20.631;
+
+
+#sysdig-file; avg; std;
+detailedP_{all}; 143614.020; 0;
+detailedP_{all}C_{plain}; 0; 0;
+
+
+#sysdig-elk; avg; std;
+detailedP_{all}; 143842.658; 777.464;
+detailedP_{all}C_{plain}; 0;0;
+
+
+#dio-file; avg; std;
+raw; 81382.547; 109.848;
+detailedP_{fds}; 83302.467; 7610.943;
+detailedP_{all}; 96988.909; 148.19;
+detailedP_{all}C_{uhash}; 97822.357; 379.039;
+detailedP_{all}C_{khash}; 55809.267; 63.814;
+
+
+#dio-elk; avg; std;
+raw; 137521.892; 93.813;
+detailedP_{fds}; 132982.383; 2348.096;
+detailedP_{all}; 126224.974; 3104.591;
+detailedP_{all}C_{uhash}; 115582.963; 3989.717;
+detailedP_{all}C_{khash}; 79047.866; 2293.059;

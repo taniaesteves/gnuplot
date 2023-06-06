@@ -1,0 +1,12 @@
+#operations\\\_per\\\_sec; AVG; DEV;
+
+
+vanilla; 161995.946; 336.851;
+
+
+raw; 97845.272; 141.874;
+detailed; 90140.696; 27.832;
+detailed\\\_paths; 108076.761; 93.619;
+detailed\\\_all; 107508.329; 317.006;
+detailed\\\_all\\\_uhash; 105802.614; 323.988;
+detailed\\\_all\\\_khash; 61029.754; 126.558;

@@ -1,0 +1,8 @@
+gnuplot -c plots/plot_latency.gp rocksdb_throughput.pdf data/rocksdb-throughput.dat "op/s" ; open graphs/rocksdb_throughput.pdf
+
+
+gnuplot -c plots/plot_event_stats.gp; epstopdf graphs/profiling_stats.eps graphs/profiling_stats.pdf; open graphs/profiling_stats.pdf
+
+gnuplot -c plots/plot_filebench_results.gp data/profiling_filebench.dat; epstopdf graphs/profiling_filebench.eps graphs/profiling_filebench.pdf; open graphs/profiling_filebench.pdf
+
+gnuplot -persist -c plots/plot_profiling_time_all_versions.gp profiling_times_all.pdf;  open graphs/profiling_times_all.pdf

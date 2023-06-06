@@ -1,0 +1,9 @@
+# deployment; mm; lo; hi;
+vanilla; 0.103; 0.103; 0.103;
+catbpf-original-text; 0.1243333333; 0.122; 0.127;
+catbpf-new-filter-nowait-plain; 0.118; 0.117; 0.119;
+catbpf-original-minhash; 0.1243333333; 0.124; 0.125;
+catbpf-new-filter-nowait; 0.1206666667; 0.120; 0.121;
+catbpf-new-filter; 0.119; 0.119; 0.119;
+catbpf-new-all; 0.1263333333; 0.125; 0.128;
+cataio-1-es; 0.1246666667; 0.124; 0.125;

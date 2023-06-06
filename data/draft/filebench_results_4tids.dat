@@ -1,0 +1,88 @@
+#operations; AVG; DEV;
+strace; 83094546.333; 207384.565;
+t00\\\_vanilla; 194622755.667; 357456.736;
+t01\\\_dio\\\_1ES\\\_raw; 182079730.667; 278795.804;
+t02\\\_dio\\\_1ES\\\_detailed; 171264740.667; 6164401.389;
+t03\\\_dio\\\_1ES\\\_detailed\\\_paths; 155829961.667; 234740.054;
+t04\\\_dio\\\_1ES\\\_detailed\\\_all; 154206712.333; 438545.069;
+t05\\\_dio\\\_1ES\\\_detailed\\\_all\\\_plain; 141545967.333; 9182061.744;
+t06\\\_dio\\\_1ES\\\_detailed\\\_all\\\_khash; 103003360.333; 3748118.383;
+t07\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_tid; 191896419.333; 2176379.528;
+t08\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_orwc; 178662592.333; 1742104.826;
+t09\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_read; 178859186.0; 2333998.287;
+t10\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_stat; 178589517.667; 2213656.858;
+
+
+#operations\\\_per\\\_sec; AVG; DEV;
+strace; 69239.078; 173.03;
+t00\\\_vanilla; 162174.164; 297.829;
+t01\\\_dio\\\_1ES\\\_raw; 151718.017; 231.823;
+t02\\\_dio\\\_1ES\\\_detailed; 142705.647; 5137.879;
+t03\\\_dio\\\_1ES\\\_detailed\\\_paths; 129843.232; 195.667;
+t04\\\_dio\\\_1ES\\\_detailed\\\_all; 128490.316; 364.605;
+t05\\\_dio\\\_1ES\\\_detailed\\\_all\\\_plain; 117941.798; 7651.844;
+t06\\\_dio\\\_1ES\\\_detailed\\\_all\\\_khash; 85826.962; 3122.661;
+t07\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_tid; 159898.592; 1816.763;
+t08\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_orwc; 148868.548; 1449.981;
+t09\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_read; 149035.082; 1945.69;
+t10\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_stat; 148810.773; 1843.731;
+
+
+#rd; AVG; DEV;
+strace; 6294.333; 15.885;
+t00\\\_vanilla; 14743.0; 27.221;
+t01\\\_dio\\\_1ES\\\_raw; 13792.667; 21.221;
+t02\\\_dio\\\_1ES\\\_detailed; 12973.0; 467.161;
+t03\\\_dio\\\_1ES\\\_detailed\\\_paths; 11804.0; 17.521;
+t04\\\_dio\\\_1ES\\\_detailed\\\_all; 11681.0; 32.741;
+t05\\\_dio\\\_1ES\\\_detailed\\\_all\\\_plain; 10722.0; 695.736;
+t06\\\_dio\\\_1ES\\\_detailed\\\_all\\\_khash; 7802.667; 283.803;
+t07\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_tid; 14536.333; 165.198;
+t08\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_orwc; 13533.667; 132.039;
+t09\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_read; 13548.667; 177.088;
+t10\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_stat; 13528.333; 167.527;
+
+
+#wr; AVG; DEV;
+strace; 12589.0; 31.193;
+t00\\\_vanilla; 29486.0; 54.443;
+t01\\\_dio\\\_1ES\\\_raw; 27585.0; 41.869;
+t02\\\_dio\\\_1ES\\\_detailed; 25946.667; 933.997;
+t03\\\_dio\\\_1ES\\\_detailed\\\_paths; 23607.667; 35.529;
+t04\\\_dio\\\_1ES\\\_detailed\\\_all; 23362.0; 66.461;
+t05\\\_dio\\\_1ES\\\_detailed\\\_all\\\_plain; 21444.0; 1391.471;
+t06\\\_dio\\\_1ES\\\_detailed\\\_all\\\_khash; 15604.667; 567.888;
+t07\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_tid; 29072.667; 330.367;
+t08\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_orwc; 27067.0; 263.501;
+t09\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_read; 27097.333; 354.177;
+t10\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_stat; 27056.667; 335.054;
+
+
+#mb\\\_per\\\_sec; AVG; DEV;
+strace; 1672.233; 4.188;
+t00\\\_vanilla; 4916.667; 6.788;
+t01\\\_dio\\\_1ES\\\_raw; 3691.033; 0.404;
+t02\\\_dio\\\_1ES\\\_detailed; 3458.833; 129.49;
+t03\\\_dio\\\_1ES\\\_detailed\\\_paths; 3140.1; 4.803;
+t04\\\_dio\\\_1ES\\\_detailed\\\_all; 3107.1; 9.035;
+t05\\\_dio\\\_1ES\\\_detailed\\\_all\\\_plain; 2851.767; 185.512;
+t06\\\_dio\\\_1ES\\\_detailed\\\_all\\\_khash; 2074.767; 76.104;
+t07\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_tid; 3868.167; 45.341;
+t08\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_orwc; 3626.333; 66.744;
+t09\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_read; 3621.3; 64.772;
+t10\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_stat; 3660.733; 68.699;
+
+
+#ms\\\_per\\\_op; AVG; DEV;
+strace; 0.055; 0.0;
+t00\\\_vanilla; 0.022; 0.001;
+t01\\\_dio\\\_1ES\\\_raw; 0.022; 0.0;
+t02\\\_dio\\\_1ES\\\_detailed; 0.023; 0.001;
+t03\\\_dio\\\_1ES\\\_detailed\\\_paths; 0.025; 0.001;
+t04\\\_dio\\\_1ES\\\_detailed\\\_all; 0.026; 0.0;
+t05\\\_dio\\\_1ES\\\_detailed\\\_all\\\_plain; 0.028; 0.002;
+t06\\\_dio\\\_1ES\\\_detailed\\\_all\\\_khash; 0.042; 0.002;
+t07\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_tid; 0.021; 0.0;
+t08\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_orwc; 0.023; 0.0;
+t09\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_read; 0.023; 0.0;
+t10\\\_dio\\\_1ES\\\_detailed\\\_filter\\\_stat; 0.023; 0.0;
