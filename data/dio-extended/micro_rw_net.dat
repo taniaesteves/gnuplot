@@ -1,0 +1,35 @@
+vanilla; recv; send;
+vanilla; 159974; 7795;
+
+
+strace; recv; send;
+raw; 161896; 5585;
+detailedP_{args}; 161880; 5644;
+detailedP_{all}; 162016; 5248;
+detailedP_{all}C_{plain}; 165742; 5281;
+
+
+sysdig-file; recv; send;
+detailedP_{all}; 208681; 15852;
+detailedP_{all}C_{plain}; 229666; 18046;
+
+
+sysdig-elk; recv; send;
+detailedP_{all}; 29307.922; 1667096.715;
+detailedP_{all}C_{plain}; 27418.062; 1613114.647;
+
+
+dio-file; recv; send;
+raw; 160502; 10757;
+detailed; 158504; 5041;
+detailedP_{all}; 159173; 5333;
+detailedP_{all}C_{uhash}; 157494; 6767;
+detailedP_{all}C_{khash}; 161024; 6567;
+
+
+dio-elk; recv; send;
+raw; 243005.421; 18748866.28;
+detailed; 243865.275; 19321286.6;
+detailedP_{all}; 250870.354; 20115773.69;
+detailedP_{all}C_{uhash}; 254245.743; 20521337.49;
+detailedP_{all}C_{khash}; 250614.633; 20130963.67;

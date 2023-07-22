@@ -17,10 +17,22 @@ function rw {
     gnuplot -c $PLOTS_DIR/plot_micro_rw_mem.gp $DATA_DIR/micro_rw_mem.dat;
     epstopdf $GRAPHS_DIR/micro_rw_mem.eps $OUT_DIR/micro_rw_mem.pdf;
 
+    gnuplot -c $PLOTS_DIR/plot_micro_rw_net.gp $DATA_DIR/micro_rw_net.dat;
+    epstopdf $GRAPHS_DIR/micro_rw_net.eps $OUT_DIR/micro_rw_net.pdf;
+
+    gnuplot -c $PLOTS_DIR/plot_micro_rw_disk.gp $DATA_DIR/micro_rw_disk.dat;
+    epstopdf $GRAPHS_DIR/micro_rw_disk.eps $OUT_DIR/micro_rw_disk.pdf;
+
+    gnuplot -c $PLOTS_DIR/plot_micro_rw_es_size.gp $DATA_DIR/micro_rw_es_size.dat;
+    epstopdf $GRAPHS_DIR/micro_rw_es_size.eps $OUT_DIR/micro_rw_es_size.pdf;
+
     if [ "$1" == "open" ]; then
         open $OUT_DIR/micro_rw.pdf;
         open $OUT_DIR/micro_rw_cpu.pdf;
         open $OUT_DIR/micro_rw_mem.pdf;
+        open $OUT_DIR/micro_rw_net.pdf;
+        open $OUT_DIR/micro_rw_disk.pdf;
+        open $OUT_DIR/micro_rw_es_size.pdf;
     fi
 
 
@@ -103,6 +115,34 @@ function rt {
         open $OUT_DIR/micro_dio_es_rt.pdf
     fi
 }
+
+function sysdig_extra {
+    gnuplot -c $PLOTS_DIR/plot_micro_sysdig_extra.gp $DATA_DIR/micro_sysdig_extra.dat;
+    epstopdf $GRAPHS_DIR/micro_sysdig_extra.eps $OUT_DIR/micro_sysdig_extra.pdf;
+
+    if [ "$1" == "open" ]; then
+        open $OUT_DIR/micro_sysdig_extra.pdf
+    fi
+}
+
+function times {
+    gnuplot -c $PLOTS_DIR/plot_micro_times.gp $DATA_DIR/micro_times.dat;
+    epstopdf $GRAPHS_DIR/micro_times.eps $OUT_DIR/micro_times.pdf;
+
+    if [ "$1" == "open" ]; then
+        open $OUT_DIR/micro_times.pdf
+    fi
+}
+
+function use_cases {
+    gnuplot -c $PLOTS_DIR/plot_use_cases_times.gp $DATA_DIR/use_cases_times.dat;
+    epstopdf $GRAPHS_DIR/use_cases_times.eps $OUT_DIR/use_cases_times.pdf;
+
+    if [ "$1" == "open" ]; then
+        open $OUT_DIR/use_cases_times.pdf
+    fi
+}
+
 
 function all {
     rw "$1";

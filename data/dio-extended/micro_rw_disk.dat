@@ -1,0 +1,30 @@
+vanilla
+vanilla; 0;
+
+
+strace; trace-size
+raw; 8.2;
+detailedPargs; 9.3;
+detailedPall; 9.1;
+detailedPallCplain; 79;
+
+
+sysdig; trace-size
+detailedPall; 31;
+detailedPallCplain; 179;
+
+
+sysdig-es; trace-size
+vanilla; 0;
+
+
+DIO; trace-size
+raw; 66;
+detailedPfds; 71;
+detailedPall; 57;
+detailedPallCuhash; 41;
+detailedPallCkhash; 51;
+
+
+DIO; trace-size
+vanilla; 0;

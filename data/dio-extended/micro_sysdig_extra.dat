@@ -1,0 +1,10 @@
+#sysdig; complete; incomplete;
+125-50ms; 0;0
+125-30s; 2060320; 118;
+15000-50ms; 4841021; 556;
+
+
+#sysdig; throughput-avg; throughput-dev;
+125-50ms;
+125-30s; 143978.206; 0
+15000-50ms; 98514.728; 0;

@@ -24,9 +24,8 @@ set rmargin 1
 set ylabel "{/:Bold {/:Italic Memory usage (GiB)}}" font ", 22"
 set key at screen 0.55, 0.04 center vertical height 1  maxrows 1
 plot ARG1 index 0 u 2:xtic(1) ti col lc rgbcolor "black" lw 2,\
-    "" index 0 u 3 ti col axes x1y1 lw 2 lt -1 fs pattern 1, \
-    "" index 0 u 4 ti col axes x1y1 lw 2 lt -1 fs pattern 8, \
-    "" index 0 u 5 ti col axes x1y1 lw 2 lc rgbcolor "#555555" lt 1 fs pattern 3
+    "" index 0 u 4 ti col axes x1y1 lw 2 lt -1 fs pattern 1, \
+    "" index 0 u 5 ti col axes x1y1 lw 2 lt -1 fs pattern 8
 
 # --------
 

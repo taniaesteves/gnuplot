@@ -37,10 +37,10 @@ set xtics font ", 24"
 set xtics rotate by 35 right
 set y2tics
 
-set yrange[0:275000000]
-set ytics 0,50000000,275000000
-set y2range[0:275000]
-set y2tics 0,50000,275000
+set yrange[0:240000000]
+set ytics 0,40000000,240000000
+set y2range[0:180000]
+set y2tics 0,30000,180000
 
 plot newhistogram "25k" at 1, \
         ARG1 index 0 using ($32-$14) ti "events_{complete}"  lc rgbcolor "black",\
@@ -71,18 +71,18 @@ unset xlabel
 
 
 set lmargin at screen 0.13  # left margin at 0.3
-set rmargin at screen 0.50  # right margin at 0.7 in the screen
-set bmargin at screen 0.68  # bottom margin at 0.4
+set rmargin at screen 0.45  # right margin at 0.7 in the screen
+set bmargin at screen 0.69  # bottom margin at 0.4
 set tmargin at screen 0.94  # top margin at 0.8
 
 
-set object rectangle from screen 0.09,0.63 to screen 0.54,0.95 behind fillcolor rgb 'white' fillstyle solid noborder
+set object rectangle from screen 0.09,0.63 to screen 0.5,0.95 behind fillcolor rgb 'white' fillstyle solid noborder
 unset key
 
-set yrange[0:80]
-set ytics 0,20,80
-set y2range[0:80]
-set y2tics 0,20,80
+set yrange[0:75]
+set ytics 0,25,75
+set y2range[0:75]
+set y2tics 0,25,75
 
 unset format y
 unset format y2
@@ -111,29 +111,3 @@ plot newhistogram "30k" at 1, \
         ARG1 index 4 using ($20/1000000) ti "" lt -1 fs pattern 8, \
         ARG1 index 12 using ($0+23):($2/1000):xtic(1) axes x1y2 w lp ls 7 lw 4 notitle, \
 
-
-# plot newhistogram "25k" at 1, \
-#         ARG1 index 0 using (($32-$14)/1000000) ti "#savedComplete"  lc rgbcolor "black", \
-#         ARG1 index 0 using ($14/1000000) ti "#savedIncomplete" lt -1 fs pattern 1, \
-#         ARG1 index 0 using ($20/1000000) ti "#lost" lt -1 fs pattern 8, \
-#         ARG1 index 8 using ($0):($2/1000):xtic(1) axes x1y2 w lp ls 7 lw 4 ti "throughput", \
-#      newhistogram "30k" at 9, \
-#         ARG1 index 1 using (($32-$14)/1000000) ti ""  lc rgbcolor "black",\
-#         ARG1 index 1 using ($14/1000000) ti "" lt -1 fs pattern 1, \
-#         ARG1 index 1 using ($20/1000000) ti "" lt -1 fs pattern 8, \
-#         ARG1 index 9 using ($0+8):($2/1000):xtic(1) axes x1y2 w lp ls 7 lw 4 notitle, \
-#      newhistogram "35k" at 17, \
-#         ARG1 index 2 using (($32-$14)/1000000) ti ""  lc rgbcolor "black", \
-#         ARG1 index 2 using ($14/1000000) ti "" lt -1 fs pattern 1, \
-#         ARG1 index 2 using ($20/1000000) ti "" lt -1 fs pattern 8, \
-#         ARG1 index 10 using ($0+16):($2/1000):xtic(1) axes x1y2 w lp ls 7 lw 4 notitle, \
-#      newhistogram "40k" at 25, \
-#         ARG1 index 3 using (($32-$14)/1000000) ti ""  lc rgbcolor "black",\
-#         ARG1 index 3 using ($14/1000000) ti "" lt -1 fs pattern 1,\
-#         ARG1 index 3 using ($20/1000000) ti "" lt -1 fs pattern 8, \
-#         ARG1 index 11 using ($0+24):($2/1000):xtic(1) axes x1y2 w lp ls 7 lw 4 notitle, \
-#      newhistogram "45k" at 33, \
-#         ARG1 index 4 using (($32-$14)/1000000) ti ""  lc rgbcolor "black",\
-#         ARG1 index 4 using ($14/1000000) ti "" lt -1 fs pattern 1,\
-#         ARG1 index 4 using ($20/1000000) ti "" lt -1 fs pattern 8, \
-#         ARG1 index 12 using ($0+32):($2/1000):xtic(1) axes x1y2 w lp ls 7 lw 4 notitle, \
