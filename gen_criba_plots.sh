@@ -1,12 +1,16 @@
 #!/bin/bash
 
-PLOTS_DIR="plots/criba"
-DATA_DIR="data/criba"
-GRAPHS_DIR="graphs/criba"
-OUT_DIR="pdfs/criba"
+SCRIPTS_DIR="criba"
+PLOTS_DIR="plots"
+DATA_DIR="data"
+GRAPHS_DIR="graphs"
+OUT_DIR="pdfs"
 
-mkdir -p $GRAPHS_DIR
-mkdir -p $OUT_DIR
+function init {
+    cd $SCRIPTS_DIR
+    mkdir -p $GRAPHS_DIR
+    mkdir -p $OUT_DIR
+}
 
 function dd {
     gnuplot -c $PLOTS_DIR/plot_histogram_criba_dataset_distribution.gp $DATA_DIR/criba-dataset-distribution.dat;
@@ -40,5 +44,5 @@ function open_dir {
     open $OUT_DIR
 }
 
-
+init
 "$@"

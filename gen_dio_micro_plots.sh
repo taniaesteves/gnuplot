@@ -1,11 +1,16 @@
 #!/bin/bash
 
-PLOTS_DIR="plots/dio-extended"
-DATA_DIR="data/dio-extended"
-GRAPHS_DIR="graphs/dio-extended"
-OUT_DIR="pdfs/dio-extended"
+SCRIPTS_DIR="dio-extended"
+PLOTS_DIR="plots"
+DATA_DIR="data"
+GRAPHS_DIR="graphs"
+OUT_DIR="pdfs"
 
-mkdir -p $OUT_DIR
+function init {
+    cd $SCRIPTS_DIR
+    mkdir -p $GRAPHS_DIR
+    mkdir -p $OUT_DIR
+}
 
 function rw {
     gnuplot -c $PLOTS_DIR/plot_micro_rw.gp $DATA_DIR/micro_rw.dat;
@@ -34,8 +39,6 @@ function rw {
         open $OUT_DIR/micro_rw_disk.pdf;
         open $OUT_DIR/micro_rw_es_size.pdf;
     fi
-
-
 }
 
 function bs_sysdig {
@@ -151,7 +154,8 @@ function all {
     rb "$1";
     filters "$1";
     rt "$1";
-
+    times "$1";
+    use_cases "$1";
 }
 
 function open_all {
@@ -183,4 +187,5 @@ function open_dir {
 }
 
 
+init
 "$@"
