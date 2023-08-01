@@ -1,7 +1,7 @@
 #!/usr/bin/gnuplot -p
 
 reset
-fontsize = 22
+fontsize = 24
 set term postscript enhanced color eps size 5.5,4 fontsize
 set output "graphs/micro_dio_es_filters.eps"
 set datafile separator ";"
@@ -11,30 +11,35 @@ set style histogram rowstacked
 set style fill solid
 set boxwidth 0.7
 
-set ylabel "{/:Bold {/:Italic Number of events}}" font ", 22"
-set format y '%.s %c'
-set format y2 '%.s %c'
+# Y axis
 set grid ytics
-
-
-set xrange [-0.5:4.5]
-set yrange [0:250000000]
-set y2range [0:250000]
-
 set ytics nomirror
-set xtics nomirror rotate by 35 right
+set format y '%.s'
+set yrange [0:240000000]
+set ytics 0,40000000,240000000
+set ylabel "{/:Bold {/:Italic Number of events (Millions)}}" font ", 28" offset 0, 0
+set ytics font ", 30"
 
-set bmargin 7
-set lmargin 8.5
-set rmargin 9
+# Y2 axis
+set y2tics
+set grid y2tics
+set format y2 '%.s'
+set y2range [0:180000]
+set y2tics 0,30000,180000
+set y2label "{/:Bold {/:Italic Throughput (Kops/s)}}" font ", 28" offset -0.5, 0
+set y2tics font ", 30"
+
+# X axis
+set xtics nomirror  rotate by 35 right
+set xrange [-0.5:4.5]
+set xtics font ", 30"
+
+set lmargin 6.5
+set rmargin 6.5
+set bmargin 7.5
 # -------------------------------------------------------------------
 
-unset key
-set y2tics
-set y2label "{/:Bold {/:Italic Throughput (ops/s)}}" font ", 22"
-# set xlabel "{/:Bold {/:Italic Batch size (MB)}}" font ", 22"
-
-set key at screen 0.49, 0.05 center vertical height 1 width -2 maxrows 2 sample 2 font ", 22"
+set key at screen 0.5, 0.05 center vertical height 1 width -5 maxrows 2 sample 2 font ", 27"
 plot ARG1 index 0 using ($32-$14):xtic(1) ti "events_{complete}" lc rgbcolor "black" lw 2,\
      ARG1 index 0 using 14 ti "events_{incomplete}" lt -1 lw 2 fs pattern 1,\
      ARG1 index 0 using 20 ti "events_{lost}" lt -1 lw 2 fs pattern 8, \
