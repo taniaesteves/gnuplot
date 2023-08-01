@@ -6,15 +6,23 @@ set output "graphs/micro_times.eps"
 set style data histograms
 set style histogram rowstacked
 
-set yrange [0.3:5.8]
-set xrange [0:700]
+set multiplot layout 2,1 margins 0.18,0.99,0.17,0.99
+set yrange [0.3:2.8]
+set xrange [0:690]
 set style fill solid  # solid color boxes
 
-set lmargin 18
-myBoxWidth = 0.8
+
+# set lmargin 25
+myBoxWidth = 0.7
 set offsets 0,0,0.5-myBoxWidth/2.,0.5
 
+unset xtics
+set ylabel "{/:Bold {/:Italic Inline}}" font ", fontsize"
+set key  vertical height 1 maxrows 1 sample 2 font ", fontsize"
+plot ARG1 index 0 using 2:0:(0):2:($0-myBoxWidth/2.):($0+myBoxWidth/2.):(1):ytic(1) with boxxy  lt -1 lw 4 fs pattern 3 ti "tracing and parsing"
+
+set xtics
+set ylabel "{/:Bold {/:Italic Offline}}" font ", fontsize"
 set xlabel "{/:Bold {/:Italic time (minutes)}}" font ", fontsize"
-set key  vertical height 1 width -2 maxrows 1 sample 2 font ", fontsize"
-plot ARG1 using 2:0:(0):2:($0-myBoxWidth/2.):($0+myBoxWidth/2.):(1):ytic(1) with boxxy  lc rgbcolor "black" lw 2 ti "tracing",\
-        "" using 3:0:($2):($2+$3):($0-myBoxWidth/2.):($0+myBoxWidth/2.):(4):ytic(1) with boxxy lt -1 lw 2 fs pattern 1 ti "parsing"
+plot ARG1 index 1 using 2:0:(0):2:($0-myBoxWidth/2.):($0+myBoxWidth/2.):(1):ytic(1) with boxxy  lt -1 lw 4 fs pattern 1 ti "tracing",\
+        "" index 1using 3:0:($2):($2+$3):($0-myBoxWidth/2.):($0+myBoxWidth/2.):(4):ytic(1) with boxxy lt -1 lw 4 fs pattern 8 ti "parsing"

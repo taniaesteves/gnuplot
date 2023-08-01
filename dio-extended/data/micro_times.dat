@@ -1,6 +1,9 @@
-tracer              tracing     parsing
-Sysdig(Disk+/dev/null) 23.966      21.331
-Sysdig(Disk+ES)    23.972      627.450
-DIO(Disk+ES)           25.539      10
-Sysdig(ES)         24.139      0
-DIO(ES)            25.539      0
+tracer              blele&parsing
+Sysdig              24.139
+DIO                 25.52
+
+
+tracer                  tracing     parsing
+Sysdig         23.972      627.450
+DIO            20.96       204.76
+
