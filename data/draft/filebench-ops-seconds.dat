@@ -1,9 +1,0 @@
-# deployment; mm; lo; hi;
-vanilla; 169981.173; 169773.903; 170299.864;
-catbpf-original-text; 144752.7687; 144660.16; 144840.832;
-catbpf-new-filter-nowait-plain; 145596.858; 145497.137; 145772.849;
-catbpf-original-minhash; 144996.7163; 144598.233; 145387.939;
-catbpf-new-filter-nowait; 145168.7777; 145119.47; 145230.227;
-catbpf-new-filter; 145698.9183; 145503.32; 146073.434;
-catbpf-new-all; 140287.59; 139677.947; 140613.635;
-cataio-1-es; 140955.2503; 140854.444; 141142.55;
