@@ -34,3 +34,16 @@ bash gen_criba_plots.sh <plot> [open]
 - `all` (Generates all the above plots)
 
 ---
+
+## F-Functions plots
+
+### Usage
+```
+bash gen_ffunctions_plots.sh <plot> [open]
+```
+
+#### Plots:
+- `latencies` (latencies plot)
+- `all` (Generates all the above plots)
+
+---
