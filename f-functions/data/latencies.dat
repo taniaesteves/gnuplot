@@ -1,0 +1,5 @@
+#test;              defaultfunctions-avg;   defaultfunctions-dev;   myfunctions-avg;    myfunctions-dev;
+fread\\\_4096;         33.2;                   70.7;                   24.7;               58.8;
+fread\\\_4097;         44.5;                   143.0;                  26.4;               103.8;
+fwrite\\\_4096;        910.4;                  332.5;                  918.0;              421.7;
+fseek;                 42.0;                   78.4;                   25.5;               92.4;
