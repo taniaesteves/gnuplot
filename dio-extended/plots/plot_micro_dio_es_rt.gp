@@ -1,7 +1,7 @@
 #!/usr/bin/gnuplot -p
 
 reset
-fontsize = 24
+fontsize = 22
 set term postscript enhanced color eps size 12,4 fontsize
 set output "graphs/micro_dio_es_rt.eps"
 set datafile separator ";"
@@ -16,7 +16,7 @@ set multiplot
 # --------------------
 
 # Y axis
-set ylabel "{/:Bold {/:Italic Number of events (Millions)}}" font ", 26"
+set ylabel "{/:Bold {/:Italic Number of events (Millions)}}" font ", 25"
 set format y '%.s'
 set grid ytics
 set ytics nomirror
@@ -24,17 +24,17 @@ set yrange[0:240000000]
 set ytics 0,40000000,240000000
 
 # Y2 axis
-set y2label "{/:Bold {/:Italic Throughput (Kops/s)}}" font ", 26"
+set y2label "{/:Bold {/:Italic Throughput (Kops/s)}}" font ", 25"
 set format y2 '%.s'
 set y2tics
 set y2range[0:180000]
 set y2tics 0,30000,180000
 
 # X axis
-set xlabel "{/:Bold {/:Italic Event generation rate (ops/s)}}" font ", 26" offset 0,0.5,0
+set xlabel "{/:Bold {/:Italic Event generation rate (ops/s)}}" font ", 25" offset 0,0.5,0
 set xtics nomirror
 set xrange [-1.5:*]
-set xtics font ", 24"
+set xtics font ", 22"
 set xtics rotate by 35 right
 
 set tmargin 0.7
@@ -42,7 +42,7 @@ set bmargin 12.8
 set rmargin 9.2
 set bmargin 9.5
 
-set key at screen 0.5, 0.03 center vertical maxrows 1 width -5 sample 2 font ", 24"
+set key at screen 0.5, 0.03 center vertical maxrows 1 width -5 sample 2 font ", 22"
 
 plot newhistogram "{/:Bold 25K}" at 1, \
         ARG1 index 0 using ($32-$14) ti "events_{complete}"  lc rgbcolor "black",\
@@ -86,12 +86,12 @@ unset xlabel
 unset xtics
 
 
-set lmargin at screen 0.13
-set rmargin at screen 0.45
-set bmargin at screen 0.69
+set lmargin at screen 0.10
+set rmargin at screen 0.465
+set bmargin at screen 0.63
 set tmargin at screen 0.94
 
-set object rectangle from screen 0.09,0.63 to screen 0.5,0.95 behind fillcolor rgb 'white' fillstyle solid noborder
+set object rectangle from screen 0.07,0.57 to screen 0.5,0.95 behind fillcolor rgb 'white' fillstyle solid noborder
 unset key
 
 plot newhistogram "30K" at 1, \
