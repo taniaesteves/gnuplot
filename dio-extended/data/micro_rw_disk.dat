@@ -4,14 +4,14 @@ vanilla; 0;
 
 strace; trace-size
 raw; 8.2;
-detailedPargs; 9.3;
-detailedPall; 9.1;
-detailedPallCplain; 79;
+detailedP_{args}; 9.3;
+detailedP_{all}; 9.1;
+detailedP_{all}C_{plain}; 79;
 
 
 sysdig; trace-size
-detailedPall; 31;
-detailedPallCplain; 179;
+detailedP_{all}; 31;
+detailedP_{all}C_{plain}; 179;
 
 
 sysdig-es; trace-size
@@ -20,10 +20,10 @@ vanilla; 0;
 
 DIO; trace-size
 raw; 66;
-detailedPfds; 71;
-detailedPall; 57;
-detailedPallCuhash; 41;
-detailedPallCkhash; 51;
+detailedP_{fds}; 70;
+detailedP_{all}; 57;
+detailedP_{all}C_{uhash}; 40;
+detailedP_{all}C_{khash}; 51;
 
 
 DIO; trace-size

@@ -5,7 +5,7 @@ detailedP_{all}C_{plain}; 1.32;
 
 dio-elk; size;
 raw; 8.92;
-detailed; 10.54;
+detailedP_{fds}; 10.54;
 detailedP_{all}; 11.94;
 detailedP_{all}C_{uhash}; 12.09;
 detailedP_{all}C_{khash}; 11.32;

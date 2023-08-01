@@ -86,7 +86,7 @@ unset key
 # set y2tics
 # set y2label "{/:Bold {/:Italic Throughput (ops/s)}}" font ", 22"
 set bmargin 7.3
-set key at screen 0.55, 0.035 center vertical height 1  maxrows 1 sample 2 font ", 22"
+set key at screen 0.5, 0.035 center vertical height 1  maxrows 1 sample 2 font ", 22"
 set xlabel "{/:Bold DIO (ES)}" font ", 22" offset 0,21.8,1
 plot ARG1 index 5 u 2:xtic(1) ti col lc rgbcolor "black" lw 2,\
     "" index 5 u 4 ti col axes x1y1 lw 2 lt -1 fs pattern 1, \

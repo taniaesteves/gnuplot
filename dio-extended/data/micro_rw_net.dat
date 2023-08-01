@@ -1,35 +1,35 @@
 vanilla; recv; send;
-vanilla; 159974; 7795;
+vanilla;
 
 
 strace; recv; send;
-raw; 161896; 5585;
-detailedP_{args}; 161880; 5644;
-detailedP_{all}; 162016; 5248;
-detailedP_{all}C_{plain}; 165742; 5281;
+raw;
+detailedP_{args};
+detailedP_{all};
+detailedP_{all}C_{plain};
 
 
 sysdig-file; recv; send;
-detailedP_{all}; 208681; 15852;
-detailedP_{all}C_{plain}; 229666; 18046;
+detailedP_{all};58.642;1.675;
+detailedP_{all}C_{plain};59.403;2.321;
 
 
 sysdig-elk; recv; send;
-detailedP_{all}; 29307.922; 1667096.715;
-detailedP_{all}C_{plain}; 27418.062; 1613114.647;
+detailedP_{all};33144.703;2105831.771;
+detailedP_{all}C_{plain};31710.805;2069318.564;
 
 
 dio-file; recv; send;
-raw; 160502; 10757;
-detailed; 158504; 5041;
-detailedP_{all}; 159173; 5333;
-detailedP_{all}C_{uhash}; 157494; 6767;
-detailedP_{all}C_{khash}; 161024; 6567;
+raw;46.179;1.133;
+detailedP_{fds};46.016;0.867;
+detailedP_{all};45.469;1.021;
+detailedP_{all}C_{uhash};45.516;0.847;
+detailedP_{all}C_{khash};45.813;0.961;
 
 
 dio-elk; recv; send;
-raw; 243005.421; 18748866.28;
-detailed; 243865.275; 19321286.6;
-detailedP_{all}; 250870.354; 20115773.69;
-detailedP_{all}C_{uhash}; 254245.743; 20521337.49;
-detailedP_{all}C_{khash}; 250614.633; 20130963.67;
+raw;238170.736;18212007.9;
+detailedP_{fds};234365.756;18591433.85;
+detailedP_{all};257437.853;20474124.01;
+detailedP_{all}C_{uhash};250027.617;20268965.64;
+detailedP_{all}C_{khash};254502.718;20277588.43;
