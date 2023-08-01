@@ -22,7 +22,7 @@ set xrange [-0.5:4.5]
 set format x "\n"     # xtic label empty line
 set linetype 1 lc "black"
 set linetype 2 lc rgb "#0078b1"
-set xlabel "{/:Bold {/:Italic Batch size (MB)}}" font ", 28" offset 0,0.7,0
+set xlabel "{/:Bold {/:Italic Batch size (MiB)}}" font ", 28" offset 0,0.7,0
 
 set bmargin 5.8
 set lmargin 5.8

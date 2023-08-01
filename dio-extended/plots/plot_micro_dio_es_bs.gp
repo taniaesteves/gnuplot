@@ -35,7 +35,7 @@ set xtics nomirror
 set format x "\n"     # xtic label empty line
 set linetype 1 lc "black"
 set linetype 2 lc rgb "#0078b1"
-set xlabel "{/:Bold {/:Italic Batch size (MB)}}" font ", 28" offset 0,0.8,0
+set xlabel "{/:Bold {/:Italic Batch size (MiB)}}" font ", 28" offset 0,0.8,0
 
 set bmargin 6
 set lmargin 7
