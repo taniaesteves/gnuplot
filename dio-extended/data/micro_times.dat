@@ -1,9 +1,9 @@
-tracer              blele&parsing
-Sysdig              24.139
-DIO                 25.52
+tracer      tracing&parsing
+Sysdig      24.139
+DIO         25.52
 
 
-tracer                  tracing     parsing
-Sysdig         23.972      627.450
-DIO            20.96       204.76
+tracer          tracing     parsing
+Sysdig          23.976      627.450
+DIO             20.95       204.76
 
