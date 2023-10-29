@@ -1,0 +1,5 @@
+Deployment; Vanilla; Val-stdev; CatBpf; CatBpf-stdev; CatStrace; CatStrace-stdev;
+genData 16GiB; 5.23; 0.000; 6.29; 0.000; 10.11; 0.032;
+runBayes 16GiB; 31.37; 0.130; 32.18; 0.346; 33.56; 0.153;
+genData 32GiB; 11.00; 0.000; 13.07; 0.006; 21.10; 0.298;
+runBayes 32GiB; 61.52; 0.262; 64.86; 1.330; 66.91; 0.924;
