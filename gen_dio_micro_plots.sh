@@ -32,12 +32,12 @@ function rw {
     epstopdf $GRAPHS_DIR/micro_rw_es_size.eps $OUT_DIR/micro_rw_es_size.pdf;
 
     if [ "$1" == "open" ]; then
-        open $OUT_DIR/micro_rw.pdf;
-        open $OUT_DIR/micro_rw_cpu.pdf;
-        open $OUT_DIR/micro_rw_mem.pdf;
+        # open $OUT_DIR/micro_rw.pdf;
+        # open $OUT_DIR/micro_rw_cpu.pdf;
+        # open $OUT_DIR/micro_rw_mem.pdf;
         open $OUT_DIR/micro_rw_net.pdf;
-        open $OUT_DIR/micro_rw_disk.pdf;
-        open $OUT_DIR/micro_rw_es_size.pdf;
+        # open $OUT_DIR/micro_rw_disk.pdf;
+        # open $OUT_DIR/micro_rw_es_size.pdf;
     fi
 }
 
