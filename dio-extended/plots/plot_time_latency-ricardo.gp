@@ -1,9 +1,8 @@
 #!/usr/bin/gnuplot -p
 
-clear
 reset
 
-set terminal svg size 750,180 enhanced background rgb 'white' fname ',22' lw 1
+set terminal svg size 750,180 enhanced background rgb 'white' fname 'NewsGotT,22' lw 1
 set output "rocksdb-dio.svg"
 
 
@@ -11,8 +10,8 @@ set output "rocksdb-dio.svg"
 set xdata time
 set style data lines
 
-set xtics format "" nomirror font ", 15"
-set ytics font ", 15"
+set xtics format "" nomirror font "NewsGotT, 15"
+set ytics font "NewsGotT, 15"
 
 
 set border lw 1.25
@@ -33,12 +32,12 @@ set style line 1 linecolor rgb dark_grey lt 1 lw 1.25
 #The legend ('key') -- single data set does not need one
 unset key
 
-set ytics offset 0.7 font ",20"
+set ytics offset 0.7 font "NewsGotT,20"
 set ytics ("0" 0, "1.0" 1, "1.5" 1.5, "2.0" 2, "2.5" 2.5, "3.0" 3, "3.5" 3.5)
 
 set timefmt "%s"
 set format x "%H:%M"
-set xtics offset 0,0.6 font ",18"
+set xtics offset 0,0.6 font "NewsGotT,18"
 
 set yrange [0.7:3.6]
 set xrange [1669734000:1669734900]
@@ -51,8 +50,8 @@ set xrange [1669734000:1669734900]
 set macro
 labelMacro(i,x,y,l) = sprintf('set obj %d circle fillcolor rgb "black" at %f,%f size char strlen("%s"), char 1; set label %d at %f,%f "%s" front center tc rgb "black"', i, x, y, l, i, x, y, l)
 
-set label 5 '{/:Bold Latency (ms)}' front center at screen 0.017, 0.58 rotate by 90 font ", 23"
-set label 6 '{/:Bold Time (HH:MM)}' front center at screen 0.54, 0.055 font ", 20"
+set label 5 '{/:Bold Latency (ms)}' front center at screen 0.017, 0.58 rotate by 90 font "NewsGotT, 23"
+set label 6 '{/:Bold Time (HH:MM)}' front center at screen 0.54, 0.055 font "NewsGotT, 20"
 
 
 set object 1 rectangle from graph 0.3333,2 to graph 0.6666,-2
@@ -61,13 +60,13 @@ set object 1 behind
 
 
 set object 2 circle at scr 0.415, 0.87 size 16 fc rgb "black" front fill solid lw 1.5
-set label 7 '{/:Bold 1}' front at scr 0.407, 0.867 font ", 22" textcolor "white"
+set label 7 '{/:Bold 1}' front at scr 0.407, 0.867 font "NewsGotT, 22" textcolor "white"
 set object 3 circle at scr 0.475, 0.283 size 16 fc rgb "black" front fill solid lw 1.5
-set label 8 '{/:Bold 2}' front at scr 0.467, 0.28 font ", 22" textcolor "white"
+set label 8 '{/:Bold 2}' front at scr 0.467, 0.28 font "NewsGotT, 22" textcolor "white"
 set object 4 circle at scr 0.553, 0.83 size 16 fc rgb "black" front fill solid lw 1.5
-set label 9 '{/:Bold 3}' front at scr 0.545, 0.827 font ", 22" textcolor "white"
+set label 9 '{/:Bold 3}' front at scr 0.545, 0.827 font "NewsGotT, 22" textcolor "white"
 set object 5 circle at scr 0.625, 0.283 size 16 fc rgb "black" front fill solid lw 1.5
-set label 10 '{/:Bold 4}' front at scr 0.617, 0.28 font ", 22" textcolor "white"
+set label 10 '{/:Bold 4}' front at scr 0.617, 0.28 font "NewsGotT, 22" textcolor "white"
 
 
 
